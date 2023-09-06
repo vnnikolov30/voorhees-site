@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: whitesmoke;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.bg-vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    bottom: -1;
+    z-index: -1;
+}
+
+.bg-vid2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    bottom: -1;
+    z-index: -1;
+}
+
+
+.logo{
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    width: 150px; 
+    height: auto;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    background: rgba(10, 10, 10, 0);
+    transition: background 0.3s;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 160px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+    font-size: 18px;
+    position: relative;
+    transition: color 0.2s, text-shadow 0.3s;
+}
+
+nav ul li a:hover{
+    color: rgb(209, 209, 209);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+
+
+nav ul li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 100px;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.sticky nav {
+    position: relative; 
+}
+
+
+.footer{
+    position: relative;
+    text-align: center;
+    bottom: 35px;
+    right: 0;
+    padding: 10px;
+}
+.footer a{
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+/* ----------------RELEASES TAB------------------ */
+#releases{
+    padding: 50px 0;   
+}
+
+.latest_releases{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.release,
+.artwork{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.release img,
+.artwork img{
+    width: 100%;
+    border-radius: 50px;
+    display: block;
+    transition: transfrom 0.5s ease-in-out;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.2),#000000 );
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer a{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 60px;
+}
+.layer h3{
+    font-weight: 600;
+    margin-bottom: 8px;
+    /* margin-top: 20px; */
+    text-align: center;
+    font-size: 30px;
+}
+
+.layer h1{
+    font-weight: 600;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.release:hover img,
+.artwork:hover img,
+.vid:hover 
+{
+    transform: scale(1.1);
+}
+
+.release:hover .layer{
+    height: 100%;
+}
+
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1.5px solid rgb(85, 15, 129);
+    padding: 14px 50px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: rgb(85, 15, 129);
+}
+
+/* ----------------ABOUT TAB------------------ */
+
+#about{
+    padding: 80px;
+    color: whitesmoke;
+} 
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 25px;
+    cursor: default;
+}
+
+.about-col-2 p{
+    text-align: center;
+}
+
+/* .about-col-2{
+    flex-basis: 60%;
+} */
+
+.artwork img, video{
+    width: 100%;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.latest_artworks{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 600;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.title2{
+    font-size: 60px;
+    font-weight: 600;
+    color: whitesmoke;
+    padding: 20px;  
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    
+}
+
+#socials{
+    text-align: center;
+    padding-bottom: 25px;
+    color: inherit;
+}
+
+#socials a{
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    line-height: 43px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
+    margin: 10px;
+
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+#socials a:hover{
+    opacity: 0.9;
+    box-shadow: 0px 1px 3px 2px rgb(255, 255, 255);
+
+}
+
+.vid{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.latest_artworks .artwork video, img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    cursor: pointer;
+}
+
+
+.latest_artworks .artwork .vid.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.8);
+}
+
+.latest_artworks .artwork .vid video:hover{
+    transition: .2s linear;
+    transform: scale(1.3);
+}
+
+
+
+/* CSS for enlarged images */
+.latest_artworks .artwork .img.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.8);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Adjust opacity as needed */
+    display: none;
+    z-index: 900; /* Ensure the overlay is below the enlarged image/video */
+}
+
+.description-h3{
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards; /* Use keyframes animation */
+}
+
+/* Keyframes animation for smooth fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.youtube-container{
+   margin-top: 100px;
+   margin-bottom: 30px;
+}
+
+#artworks{
+    margin-top: 80px;
+}
+
+#releases{
+    margin-top: 30px;
+}
