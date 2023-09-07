@@ -6,5 +6,4 @@ function fadeInSpotify() {
     }
 }
 
-// Add a delay before fading in (adjust the delay time in milliseconds as needed)
 setTimeout(fadeInSpotify, 1000); // 1000 milliseconds = 1 second
