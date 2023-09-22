@@ -9,13 +9,14 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
     </head>
     <body>
+    
     <div id="header">
         <div>
 <!-------------------------------- BG VIDEO SETUP----------------------------------->
-            <video autoplay loop muted plays-inline class="bg-vid">
+            <video autoplay loop muted plays-inline class="bg-vid" id="bg-vid-id">
                 <source src="resources/vid/japvh.webm" type="video/mp4">
             </video>
-            <a href="#"><video src="resources/vid/logo-glitch.webm" class="logo" autoplay loop muted></video></a>
+            <a href="#"><video src="resources/vid/logo-glitch.webm" class="logo" id="logo-id" autoplay loop muted></video></a>
 
         </div>
 
@@ -27,13 +28,15 @@
                 
 <!-------------------------------- NAV BAR------------------------------------>
 
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#releases">Releases</a></li>
-                    <li><a href="#artworks">Artwork</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#socials">Socials</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header"  onclick="closemenu()">Home</a></li>
+                    <li><a href="#releases" onclick="closemenu()">Releases</a></li>
+                    <li><a href="#artworks" onclick="closemenu()">Artwork</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#socials" onclick="closemenu()" >Socials</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
         </div>
@@ -45,6 +48,23 @@
         <div class="container">
             <h1 class="title">Latest Releases</h1>
             <div class="latest_releases">
+                <div class="release">
+                    <img src="resources/img/releases/lietome.png" alt="lietomeimage">
+                    <div class="layer">
+                        <h3>Stream</h3>
+                        <h1>Lie to me</h1>
+                        <a target="_blank" rel="noopener noreferrer"  href="https://fanlink.to/lietome-vhs"><i class="fa-solid fa-play"></i></a>
+                        <p>Available on:</p>
+                        <div class="streaming-icons">
+                            <i class="fa-brands fa-spotify"></i>
+                            <i class="fa-brands fa-itunes"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-deezer"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+
                 <div class="release">
                     <img src="resources/img/releases/your_love.png" alt="yourloveimage">
                     <div class="layer">
@@ -85,22 +105,6 @@
                         <h3>Stream</h3>
                         <h1>My Mind</h1>
                         <a target="_blank" rel="noopener noreferrer"  href="https://fanlink.to/vhsmymind"><i class="fa-solid fa-play"></i></a>
-                        <p>Available on:</p>
-                        <div class="streaming-icons">
-                            <i class="fa-brands fa-spotify"></i>
-                            <i class="fa-brands fa-itunes"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-deezer"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="release">
-                    <img src="resources/img/releases/you_i.png" alt="yourloveimage">
-                    <div class="layer">
-                        <h3>Stream</h3>
-                        <h1>You & I</h1>
-                        <a target="_blank" rel="noopener noreferrer"  href="https://fanlink.to/VoorheesYAI"><i class="fa-solid fa-play"></i></a>
                         <p>Available on:</p>
                         <div class="streaming-icons">
                             <i class="fa-brands fa-spotify"></i>
@@ -165,7 +169,7 @@
                 <div class="about-col-2"></div>
                 <h1 class="title">Who is Voorhees?</h1>
                 <br>
-                <p>Ever since I hit 13, my entire world has revolved around one incredible thing: Art.
+                <p class="txt-about">Ever since I hit 13, my entire world has revolved around one incredible thing: Art.
                     <br>
                     <br>
                     Around the age of 14, I stumbled into the world of music.
@@ -227,6 +231,7 @@
     </div>
     <script src="media.js"></script>
     <script src="sticky.js"></script>
+    <script src="sidemenu.js"></script>
     
 
     <div class="overlay"></div>

@@ -31,17 +31,6 @@ body{
     z-index: -1;
 }
 
-.bg-vid2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    bottom: -1;
-    z-index: -1;
-}
-
 
 .logo{
     position: absolute;
@@ -204,7 +193,6 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 600;
     margin-bottom: 8px;
-    /* margin-top: 20px; */
     text-align: center;
     font-size: 30px;
 }
@@ -259,6 +247,7 @@ nav ul li a:hover::after{
 
 .about-col-1{
     flex-basis: 35%;
+    margin-bottom: 40px;
 }
 
 .about-col-1 img{
@@ -271,9 +260,6 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-/* .about-col-2{
-    flex-basis: 60%;
-} */
 
 .artwork img, video{
     width: 100%;
@@ -426,10 +412,73 @@ nav ul li a:hover::after{
    margin-bottom: 30px;
 }
 
-#artworks{
-    margin-top: 80px;
+/* ____________________________________________________CSS FOR SMALL SCREENS_________________________________________________________________ */
+nav .fa-solid{
+    display: none;
 }
+@media only screen and (max-width: 600px){
+    
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: rgb(0, 0, 0, 0.9);
+        border-radius: 5px;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: left 0.5s;
 
-#releases{
-    margin-top: 30px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .logo{
+        position: absolute;
+        top: 0px; 
+        left: 250px; 
+        width: 150px; 
+        height: auto;
+    }
+
+    .title{
+        font-size:  40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .txt-about{
+        font-size: 14px;
+        text-align: center;
+        
+    }
+
+    .about-col-1 img{
+        display: inline;
+    }
+
+    .latest_releases{
+        size: 15px;
+    }
+
 }
