@@ -1,154 +1,163 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <link rel="icon" href="resources/img/android-chrome-512x512.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Voorhees</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
-    </head>
-    <body>
-    
-    <div id="header">
-        <div>
-<!-------------------------------- BG VIDEO SETUP----------------------------------->
-            <video autoplay loop muted plays-inline class="bg-vid" id="bg-vid-id">
-                <source src="resources/vid/japvh.webm" type="video/mp4">
-            </video>
-            <a href="#"><video src="resources/vid/logo-glitch.webm" class="logo" id="logo-id" autoplay loop muted></video></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="resources/img/android-chrome-512x512.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voorhees</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+</head>
+<body>
 
-        </div>
+<div id="header">
+    <div>
+        <!-------------------------------- BG VIDEO SETUP----------------------------------->
+        <video autoplay loop muted class="bg-vid" id="bg-vid-id">
+            <source src="resources/vid/japvh.webm" type="video/mp4">
+        </video>
+        <a href="#">
+            <video src="resources/vid/logo-glitch.webm" class="logo" id="logo-id" autoplay loop muted></video>
+        </a>
 
-<!-------------------------------- UI SETUP------------------------------------>
-
-        <div class="container">
-            <nav class="sticky">
-            
-                
-<!-------------------------------- NAV BAR------------------------------------>
-
-                <ul id="sidemenu">
-                    <li><a href="#header"  onclick="closemenu()">Home</a></li>
-                    <li><a href="#releases" onclick="closemenu()">Releases</a></li>
-                    <li><a href="#artworks" onclick="closemenu()">Artwork</a></li>
-                    <li><a href="#about" onclick="closemenu()">About</a></li>
-                    <li><a href="#socials" onclick="closemenu()" >Socials</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-
-        </div>
     </div>
-    
+
+    <!-------------------------------- UI SETUP------------------------------------>
+
+    <div class="container">
+        <nav class="sticky">
+
+
+            <!-------------------------------- NAV BAR------------------------------------>
+
+            <ul id="sideMenu">
+                <li><a href="#header" onclick="closeMenuLinks()">Home</a></li>
+                <li><a href="#releases" onclick="closeMenuLinks()">Releases</a></li>
+                <li><a href="#artworks" onclick="closeMenuLinks()">Artwork</a></li>
+                <li><a href="#about" onclick="closeMenuLinks()">About</a></li>
+                <li><a href="#socials" onclick="closeMenuLinks()">Socials</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+    </div>
+
+
+
+</div>
+
 <!-------------------------------- RELEASES SECTION------------------------------------>
 
-    <div id="releases">
-        <div class="container">
-            <h1 class="title">Latest Releases</h1>
-            <div class="latest_releases">
-                <div class="release">
-                    <img src="resources/img/releases/lietome.png" alt="lietomeimage">
-                    <div class="layer">
-                        <h3>Stream</h3>
-                        <h1>Lie to me</h1>
-                        <a target="_blank" rel="noopener noreferrer"  href="https://fanlink.to/lietome-vhs"><i class="fa-solid fa-play"></i></a>
-                        <p>Available on:</p>
-                        <div class="streaming-icons">
-                            <i class="fa-brands fa-spotify"></i>
-                            <i class="fa-brands fa-itunes"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-deezer"></i>
-                        </div>
-                        
+<div id="releases">
+    <div class="container">
+        <h1 class="title">Latest Releases</h1>
+        <div class="latest_releases">
+            <div class="release">
+                <img src="resources/img/releases/lietome.png" alt="lietomeimage">
+                <div class="layer">
+                    <h3>Stream</h3>
+                    <h1>Lie to me</h1>
+                    <a target="_blank" rel="noopener noreferrer" href="https://fanlink.to/lietome-vhs"><i
+                            class="fa-solid fa-play"></i></a>
+                    <p>Available on:</p>
+                    <div class="streaming-icons">
+                        <i class="fa-brands fa-spotify"></i>
+                        <i class="fa-brands fa-itunes"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-deezer"></i>
                     </div>
-                </div>
 
-                <div class="release">
-                    <img src="resources/img/releases/your_love.png" alt="yourloveimage">
-                    <div class="layer">
-                        <h3>Stream</h3>
-                        <h1>Your Love</h1>
-                        <a target="_blank" rel="noopener noreferrer"  href="https://voorhees.fanlink.to/ur-love"><i class="fa-solid fa-play"></i></a>
-                        <p>Available on:</p>
-                        <div class="streaming-icons">
-                            <i class="fa-brands fa-spotify"></i>
-                            <i class="fa-brands fa-itunes"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-deezer"></i>
-                        </div>
-                        
+                </div>
+            </div>
+
+            <div class="release">
+                <img src="resources/img/releases/your_love.png" alt="yourloveimage">
+                <div class="layer">
+                    <h3>Stream</h3>
+                    <h1>Your Love</h1>
+                    <a target="_blank" rel="noopener noreferrer" href="https://voorhees.fanlink.to/ur-love"><i
+                            class="fa-solid fa-play"></i></a>
+                    <p>Available on:</p>
+                    <div class="streaming-icons">
+                        <i class="fa-brands fa-spotify"></i>
+                        <i class="fa-brands fa-itunes"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-deezer"></i>
                     </div>
-                </div>
 
-                <div class="release">
-                    <img src="resources/img/releases/reason.png" alt="yourloveimage">
-                    
-                    <div class="layer">
-                        <h3>Stream</h3>
-                        <h1>Reason</h1>
-                        <a target="_blank" rel="noopener noreferrer" href="https://voorhees.fanlink.to/vhsreason"><i class="fa-solid fa-play"></i></a>
-                        <p>Available on:</p>
-                        <div class="streaming-icons">
-                            <i class="fa-brands fa-spotify"></i>
-                            <i class="fa-brands fa-itunes"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-deezer"></i>
-                        </div>
-                    </div>
                 </div>
+            </div>
 
-                <div class="release">
-                    <img src="resources/img/releases/my_mind.png" alt="yourloveimage">
-                    <div class="layer">
-                        <h3>Stream</h3>
-                        <h1>My Mind</h1>
-                        <a target="_blank" rel="noopener noreferrer"  href="https://fanlink.to/vhsmymind"><i class="fa-solid fa-play"></i></a>
-                        <p>Available on:</p>
-                        <div class="streaming-icons">
-                            <i class="fa-brands fa-spotify"></i>
-                            <i class="fa-brands fa-itunes"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-deezer"></i>
-                        </div>
+            <div class="release">
+                <img src="resources/img/releases/reason.png" alt="yourloveimage">
+
+                <div class="layer">
+                    <h3>Stream</h3>
+                    <h1>Reason</h1>
+                    <a target="_blank" rel="noopener noreferrer" href="https://voorhees.fanlink.to/vhsreason"><i
+                            class="fa-solid fa-play"></i></a>
+                    <p>Available on:</p>
+                    <div class="streaming-icons">
+                        <i class="fa-brands fa-spotify"></i>
+                        <i class="fa-brands fa-itunes"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-deezer"></i>
                     </div>
                 </div>
             </div>
-            <a href="all_releases.html" class="btn">All releases</a>
 
+            <div class="release">
+                <img src="resources/img/releases/my_mind.png" alt="yourloveimage">
+                <div class="layer">
+                    <h3>Stream</h3>
+                    <h1>My Mind</h1>
+                    <a target="_blank" rel="noopener noreferrer" href="https://fanlink.to/vhsmymind"><i
+                            class="fa-solid fa-play"></i></a>
+                    <p>Available on:</p>
+                    <div class="streaming-icons">
+                        <i class="fa-brands fa-spotify"></i>
+                        <i class="fa-brands fa-itunes"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-deezer"></i>
+                    </div>
+                </div>
+            </div>
         </div>
+        <a href="all_releases.html" class="btn">All releases</a>
+
     </div>
+</div>
 <!--------------------------------ARTWORK SECTION------------------------------------>
-    <div id="artworks">
-        <div class="container">
-            <h1 class="title">Artworks</h1>
-            <div class="artwork">
+<div id="artworks">
+    <div class="container">
+        <h1 class="title">Artworks</h1>
+        <div class="artwork">
             <div class="latest_artworks">
                 <div class="artwork">
-                    <video autoplay loop muted plays-inline class="vid">
+                    <video autoplay loop muted class="vid">
                         <source src="resources/img/artworks/webm/gold.webm" type="video/webm">
                     </video>
                 </div>
-                
+
                 <div class="artwork">
-                    <video autoplay loop muted plays-inline class="vid">
+                    <video autoplay loop muted class="vid">
                         <source src="resources/img/artworks/webm/alien.webm" type="video/webm">
                     </video>
                 </div>
 
                 <div class="artwork">
-                    <video autoplay loop muted plays-inline class="vid">
+                    <video autoplay loop muted  class="vid">
                         <source src="resources/img/artworks/webm/card.webm" type="video/webm">
                     </video>
                 </div>
 
                 <div class="artwork">
-                    <video autoplay loop muted plays-inline class="vid">
+                    <video autoplay loop muted  class="vid">
                         <source src="resources/img/artworks/webm/head.webm" type="video/webm">
                     </video>
                 </div>
-            
+
 
             </div>
             <a href="artworks.html" class="btn">More artworks</a>
@@ -157,7 +166,7 @@
     </div>
 
 
-<!-- ---------ABOUT SECTION------------- -->
+    <!-- ---------ABOUT SECTION------------- -->
 
     <div id="about">
         <div class="container">
@@ -169,71 +178,74 @@
                 <div class="about-col-2"></div>
                 <h1 class="title">Who is Voorhees?</h1>
                 <br>
-                <p class="txt-about">Ever since I hit 13, my entire world has revolved around one incredible thing: Art.
-                    <br>
-                    <br>
-                    Around the age of 14, I stumbled into the world of music.
-                    <br> 
-                    Armed with a laptop and a heap of determination,
-                    <br>
-                    I dove headfirst into recording, producing, and all the technical wizardry that comes with it, right from the cozy confines of my bedroom in Varna, Bulgaria.
-                    <br>
-                    <br>
-                    In the beginning, I was a bit of a bashful artist, hesitating to share my musical creations with anyone. 
-                    <br>
-                    Yet, as days turned into months, I started building up the courage to play my tracks for a few of my pals. 
-                    <br>
-                    Their genuine enthusiasm and support gave me the push I needed to step out of my comfort zone and share my music more widely.
-                    <br>
-                    <br>
-                    Then, the thought struck me: Why not put my art out there for the world to see?
-                    <br>
-                    And that's where "Voorhees" comes in. 
-                    <br>
-                    At first i struggled finding an alias that i really liked and after going through some horible names i had an idea.
-                    <br>
-                    You see, I'm not just a music and art enthusiast—I'm also a horror film fanatic.
-                    <br> 
-                    And if we're talking horror icons, there is none better than Jason Voorhees.
-                    <br>
-                    I liked how it sounded and people seemed to like it so it stuck.
-                    <br>
-                    <br>
-                    So how does digital art comes into this?
-                    <br>
-                    You see, I needed someone to do my covers, videos and visuals. 
-                    <br>
-                    At first, it was all about necessity. With no go-to artist in sight i decided to give it a try. Over time, it actually became something i enjoyed and i started doing stuff outside of "Voorhees" as well.
-                    <br>
-                    <br>
-                    
-                    Anyway, i hope you enjoy my stuff!
-                    <br>
+                <pre class="txt-about">
 
-                    cya! :)    
-                </p>
+                Ever since I hit 13, my entire world has revolved around one incredible thing: Art.
+                Around the age of 14, I stumbled into the world of music.
+
+                Armed with a laptop and a heap of determination,
+                I dove headfirst into recording, producing, and all the technical wizardry that comes with it, right
+                from the cozy confines of my bedroom in Varna, Bulgaria.
+
+
+                In the beginning, I was a bit of a bashful artist, hesitating to share my musical creations with
+                anyone.
+                Yet, as days turned into months, I started building up the courage to play my tracks for a few of my
+                pals.
+                Their genuine enthusiasm and support gave me the push I needed to step out of my comfort zone and
+                share my music more widely.
+
+                Then, the thought struck me: Why not put my art out there for the world to see?
+                And that's where "Voorhees" comes in.
+                At first i struggled finding an alias that i really liked and after going through some horible names
+                i had an idea.
+
+                You see, I'm not just a music and art enthusiast—I'm also a horror film fanatic.
+                And if we're talking horror icons, there is none better than Jason Voorhees.
+                I liked how it sounded and people seemed to like it so it stuck.
+
+                So how does digital art comes into this?
+
+                You see, I needed someone to do my covers, videos and visuals.
+                At first, it was all about necessity. With no go-to artist in sight i decided to give it a try. Over
+                time, it actually became something i enjoyed and i started doing stuff outside of "Voorhees" as
+                well.
+
+
+                Anyway, i hope you enjoy my stuff!
+                cya! :)
+
+                </pre>
             </div>
         </div>
     </div>
 
-<!-- ---------SOCIALS------------- -->
+    <!-- ---------SOCIALS------------- -->
     <div id="socials">
         <div class="container">
-            <a target="_blank" rel="noopener noreferrer"  href="https://open.spotify.com/artist/0cDEwbwCuc3JlXS4nS1I8r?si=syRCV_SZRGWRcmWJN12VIw"><i class="fa-brands fa-spotify"></i></a>
-            <a target="_blank" rel="noopener noreferrer"  href="https://www.youtube.com/@Voorheess/featured"><i class="fa-brands fa-youtube"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/voorheesmedia/"><i class="fa-brands fa-instagram"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/voorheesn3"><i class="fa-brands fa-soundcloud"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Voorheesdj"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" rel="noopener noreferrer"
+               href="https://open.spotify.com/artist/0cDEwbwCuc3JlXS4nS1I8r?si=syRCV_SZRGWRcmWJN12VIw"><i
+                    class="fa-brands fa-spotify"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@Voorheess/featured"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/voorheesmedia/"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/voorheesn3"><i
+                    class="fa-brands fa-soundcloud"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Voorheesdj"><i
+                    class="fa-brands fa-facebook"></i></a>
         </div>
     </div>
     <div class="footer">
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/vnnikolov30">DESIGN AND BUILD: VIKTOR NIKOLOV</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/vnnikolov30">DESIGN AND BUILD: VIKTOR
+            NIKOLOV</a>
     </div>
     <script src="media.js"></script>
     <script src="sticky.js"></script>
     <script src="sidemenu.js"></script>
-    
+
 
     <div class="overlay"></div>
-    </body>
-    </html>
+</div>
+</body>
+</html>

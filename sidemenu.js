@@ -1,12 +1,17 @@
-let sidemenu = document.getElementById("sidemenu");
+let sideMenu = document.getElementById("sideMenu");
 
-function openmenu(){
-    sidemenu.style.left = "0";
+function openMenu() {
+    sideMenu.style.left = "0";
 }
 
-function closemenu(){
-    sidemenu.style.left = "-200px";
+function closeMenu() {
+    sideMenu.style.left = "-200px";
 }
 
+function closeMenuLinks(){
+    if(window.innerWidth < 739) {
+        closeMenu();
+    }
+}
 
 
